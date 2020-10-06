@@ -1,19 +1,4 @@
-//function to add prefix datetime in console.log function
-global.console.log=(function() {
-  var orig=console.log;
-  return function() {
-    try {
-      arguments[0] = "["+new Date().toUTCString() +"] "+ arguments[0];
-      orig.apply(console, arguments);
-    }
-    catch(err){
-      orig.apply(console, arguments);   
-    } 
-    finally {
-      //nothing
-    }
-  };
-})();
+
 
 console.log(process.env);
 
@@ -21,8 +6,6 @@ const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const multer = require("multer");
-const morgan = require("morgan");
 const api = require("./routes/api/api");
 const cookieParser = require("cookie-parser");
 var mongoose = require('mongoose');
@@ -34,13 +17,10 @@ const config = require("./config.json")[
 ];
 
 const PORT = config.PORT || 8080;
-const logger = morgan("combined", {
-  skip: (_, res) => res.statusCode < 400
-});
+
 
 // Initializing the server
 const app = express();
-const upload = multer();
 app.set('trust proxy', true);
 app.disable("etag");
 
