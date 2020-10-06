@@ -35,7 +35,7 @@ router.post('/', function (req, res, next) {
     if (!user) {
       let response = {
         data: "",
-        error: "Invalid Credentials",
+        error: "InvalidUsername or password",
         redirect: "",
         status:401
       }
