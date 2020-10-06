@@ -1,0 +1,17 @@
+{
+	"local": {
+		"API_BASE_URL": "http://localhost:8080/api/"
+	},
+	"development": {
+		"API_BASE_URL": "https://aaadevreact.sureifyapi.com/api"
+	},
+	"stg": {
+		"API_BASE_URL": "https://aaa-stg-react.sureifyapi.com/api"
+	},
+	"uat": {
+		"API_BASE_URL": "https://tst.term.aaalife.com/api"
+	},
+	"production": {
+		"API_BASE_URL": "https://term.aaalife.com/api"
+	}
+}
