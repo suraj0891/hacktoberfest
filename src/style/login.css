@@ -1,0 +1,56 @@
+.loginWrapper{
+    padding-top:10%;
+}
+.header{
+height: 60px;
+background-color: #597a56;
+margin: -20px -20px 0px -20px !important;
+display: flex;
+justify-content: center;
+}
+.headerContent{
+    color: white;
+    /* margin-left: 35%; */
+   
+}
+.loginButton{
+    width:93%;
+    margin-left:36px;
+    margin-right: 20px;
+    background-color: #166835 !important;
+    padding:0px;
+    height:45px;
+}
+.error{
+    /* border-color: red !important; */
+    border-bottom: 2px solid red !important;
+    color: red;
+}
+.loaderimg{
+    width:10%;
+}
+.box{
+border:1px solid #c7412d;
+background-color:#c7412d;
+color:white;
+margin-left:36px;
+width:200px;
+height:30px;
+border-radius:6px;
+padding-left: 20px;
+padding-top: 4px;
+}
+.arrow-up{
+ width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 10px solid #c7412d;
+  margin-left:90px;
+  margin-top:-35px;
+
+}
+.pageLoader{
+    margin-top: 15%;
+    margin-left:40%;
+}
